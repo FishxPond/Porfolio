@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FishxPond Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="images/logo.png" alt="FishxPond logo">
+    </div>
+    <h1 class="name">FishxPond</h1>
+
+    <section class="about">
+      <h2>About me</h2>
+      <p>Short intro about you goes here...</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p>Your school or program info...</p>
+    </section>
+
+    <div class="socials">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="YouTube">YT</a>
+      <a href="#" aria-label="TikTok">TT</a>
+      <a href="#" aria-label="Discord">DC</a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main>
+    <header class="top-nav">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="illustrations">Illustrations</button>
+      <button class="tab" data-filter="sculpture">Sculpture</button>
+      <button class="tab" data-filter="photography">Photography</button>
+      <button class="tab" data-filter="animation">Animation</button>
+      <button class="tab" data-filter="modeling">3D Modeling</button>
+    </header>
+
+    <section class="gallery">
+      <!-- placeholder artworks -->
+      <div class="artwork" data-category="illustrations">
+        <img src="images/sample1.jpg" alt="Artwork title">
+        <div class="info">
+          <h3>Artwork Title</h3>
+          <p>Spring 2024</p>
+        </div>
+      </div>
+
+      <div class="artwork" data-category="sculpture">
+        <img src="images/sample2.jpg" alt="Artwork title">
+        <div class="info">
+          <h3>Another Work</h3>
+          <p>Summer 2023</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
