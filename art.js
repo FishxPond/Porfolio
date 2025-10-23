@@ -51,17 +51,3 @@ if (artData[artId]) {
 } else {
   document.querySelector('.art-main').innerHTML = "<p>Artwork not found.</p>";
 }
-
-// Fullscreen feature
-const mainArt = document.getElementById('main-art');
-const overlay = document.getElementById('fullscreen-overlay');
-const overlayImg = document.getElementById('fullscreen-image');
-
-mainArt.addEventListener('click', () => {
-  overlayImg.src = mainArt.src;
-  overlay.classList.remove('hidden');
-});
-
-overlay.addEventListener('click', () => {
-  overlay.classList.add('hidden');
-});
