@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FishxPond | Artwork View</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.19.3/inter.min.css">
+</head>
+<body class="art-page">
+
+  <!-- Slim Sidebar -->
+  <aside class="art-sidebar">
+    <a href="index.html" class="home-icon">★</a>
+    <div class="art-socials">
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="images/tik-tok.png" alt="TikTok"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/discord.png" alt="Discord"></a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="art-main">
+    <div class="viewer">
+      <img id="main-art" src="" alt="Artwork" class="main-art-image">
+    </div>
+
+    <div class="variations" id="variation-container">
+      <!-- variation images will be inserted dynamically -->
+    </div>
+
+    <h2 id="art-title" class="art-title"></h2>
+    <p id="art-date" class="art-date"></p>
+  </main>
+
+  <!-- Fullscreen Overlay -->
+  <div id="fullscreen-overlay" class="fullscreen-overlay hidden">
+    <img id="fullscreen-image" src="" alt="">
+  </div>
+
+  <script src="art.js"></script>
+</body>
+</html>

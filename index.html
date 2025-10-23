@@ -5,57 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FishxPond Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.19.3/inter.min.css">
 </head>
+
 <body>
 
   <!-- Sidebar -->
   <aside class="sidebar">
     <div class="logo">
-      <img src="images/logo.png" alt="FishxPond logo">
+      <img src="images/CatFishV2.png" alt="FishxPond logo">
+      <h1 class="name">FishxPond</h1>
     </div>
-    <h1 class="name">FishxPond</h1>
 
     <section class="about">
       <h2>About me</h2>
-      <p>Short intro about you goes here...</p>
+      <p>I am 21 I like video games, art and movies, Thats all!</p>
     </section>
 
     <section class="education">
       <h2>Education</h2>
-      <p>Your school or program info...</p>
+      <p>Harford Community Collage - Associates in Digital Arts</p>
     </section>
 
     <div class="socials">
-      <a href="#" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="YouTube">YT</a>
-      <a href="#" aria-label="TikTok">TT</a>
-      <a href="#" aria-label="Discord">DC</a>
+      <a href="https://www.youtube.com">
+        <img src="images/instagram.png" alt="Click Me" class="image-button">
+      </a>
+      <a href="https://www.youtube.com">
+        <img src="images/youtube.png" alt="Click Me" class="image-button">
+      </a>
+      <a href="https://www.youtube.com">
+        <img src="images/tik-tok.png" alt="Click Me" class="image-button">
+      </a>
+      <a href="https://www.youtube.com">
+        <img src="images/twitter.png" alt="Click Me" class="image-button">
+      </a>
+      <a href="https://www.youtube.com">
+        <img src="images/discord.png" alt="Click Me" class="image-button">
+      </a>
     </div>
   </aside>
 
   <!-- Main content -->
   <main>
-    <header class="top-nav">
-      <button class="tab active" data-filter="all">All</button>
-      <button class="tab" data-filter="illustrations">Illustrations</button>
-      <button class="tab" data-filter="sculpture">Sculpture</button>
-      <button class="tab" data-filter="photography">Photography</button>
-      <button class="tab" data-filter="animation">Animation</button>
-      <button class="tab" data-filter="modeling">3D Modeling</button>
-    </header>
+  <!-- Banner Section -->
+  <div class="banner">
+    <img src="images/Rectangle 2.png" alt="Banner image">
+  </div>
+
+  <!-- Category Tabs -->
+  <nav class="top-nav">
+    <button class="tab active">All</button>
+    <button class="tab">Illustrations</button>
+    <button class="tab">Sculpture</button>
+    <button class="tab">Photography</button>
+    <button class="tab">Animation</button>
+    <button class="tab">3D Modeling</button>
+  </nav>
 
     <section class="gallery">
       <!-- placeholder artworks -->
-      <div class="artwork" data-category="illustrations">
-        <img src="images/sample1.jpg" alt="Artwork title">
+      <div class="artwork" data-category="illustrations" data-id="art1">
+        <img src="images/Rectangle 4.png" alt="Artwork title">
         <div class="info">
           <h3>Artwork Title</h3>
           <p>Spring 2024</p>
         </div>
       </div>
 
-      <div class="artwork" data-category="sculpture">
-        <img src="images/sample2.jpg" alt="Artwork title">
+      <div class="artwork" data-category="sculpture" data-id="art2">
+        <img src="images/Rectangle 3.png" alt="Artwork title">
+        <div class="info">
+          <h3>Another Work</h3>
+          <p>Summer 2023</p>
+        </div>
+      </div>
+
+            <div class="artwork" data-category="sculpture"data-id="art3">
+        <img src="images/Rectangle 3.png" alt="Artwork title">
         <div class="info">
           <h3>Another Work</h3>
           <p>Summer 2023</p>
