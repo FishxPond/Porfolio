@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FishxPond | Artwork View</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.19.3/inter.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FishxPond | Artwork</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="art-page">
 
   <!-- Slim Sidebar -->
   <aside class="art-sidebar">
-    <a href="index.html" class="home-icon">★</a>
-    <div class="art-socials">
+    <a href="index.html" class="home-icon" aria-label="Back to home">★</a>
+
+    <nav class="art-socials">
       <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
       <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
       <a href="#"><img src="images/tik-tok.png" alt="TikTok"></a>
       <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
       <a href="#"><img src="images/discord.png" alt="Discord"></a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <!-- the star / home is already top, this area can hold extra links if you want -->
     </div>
   </aside>
 
-  <!-- Main Content -->
+  <!-- Page content: viewer on left, meta on right -->
   <main class="art-main">
-    <div class="viewer">
-      <img id="main-art" src="" alt="Artwork" class="main-art-image">
-    </div>
+    <div class="art-content">
+      <!-- LEFT: framed/matted viewer -->
+      <div class="viewer-column">
+        <div class="frame">
+          <div class="mat">
+            <img id="main-art" class="main-art-image" src="" alt="Main artwork">
+          </div>
+        </div>
 
-    <div class="variations" id="variation-container">
-      <!-- variation images will be inserted dynamically -->
-    </div>
+        <!-- Thumbnail rail (rounded gray container) -->
+        <div class="thumb-rail">
+          <div id="variation-container" class="variations"></div>
+        </div>
+      </div>
 
-    <h2 id="art-title" class="art-title"></h2>
-    <p id="art-date" class="art-date"></p>
+      <!-- RIGHT: Title + description -->
+      <aside class="meta-column">
+        <h1 id="art-title" class="art-title"></h1>
+        <p class="art-description" id="art-desc"></p>
+
+        <div class="meta-list">
+          <p><strong>Date:</strong> <span id="art-date"></span></p>
+          <p><strong>Medium:</strong> <span id="art-medium"></span></p>
+          <p><strong>Size:</strong> <span id="art-size"></span></p>
+        </div>
+      </aside>
+    </div>
   </main>
 
-  <!-- Fullscreen Overlay -->
-  <div id="fullscreen-overlay" class="fullscreen-overlay hidden">
-    <img id="fullscreen-image" src="" alt="">
+  <!-- Fullscreen overlay -->
+  <div id="fullscreen-overlay" class="fullscreen-overlay hidden" role="dialog" aria-hidden="true">
+    <img id="fullscreen-image" src="" alt="Fullscreen artwork">
   </div>
 
   <script src="art.js"></script>
