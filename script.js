@@ -21,3 +21,13 @@ tabs.forEach(tab => {
     });
   });
 });
+
+// Handle clicking on an artwork to go to art.html
+
+artworks.forEach(art => {
+  art.addEventListener('click', () => {
+    const artId = art.dataset.id; // get the unique id
+    // Go to art.html and pass the id in the URL
+    window.location.href = `art.html?id=${artId}`;
+  });
+});
