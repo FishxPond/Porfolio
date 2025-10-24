@@ -9,8 +9,8 @@ const artData = {
     date: "Spring 2024",
     images: [
       "images/Rectangle 4.png",
-      "images/Rectangle 5.png",
-      "images/Rectangle 6.png"
+      "images/Rectangle 4.png",
+      "images/Rectangle 4.png"
     ]
   },
   art2: {
@@ -18,7 +18,7 @@ const artData = {
     date: "Summer 2023",
     images: [
       "images/Rectangle 3.png",
-      "images/Rectangle 7.png"
+      "images/Rectangle 3.png"
     ]
   }
 };
