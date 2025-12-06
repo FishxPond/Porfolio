@@ -112,7 +112,6 @@ main {
 
 /* ---------- BANNER ---------- */
 .banner {
-  position: sticky;
   top: 0;
   z-index: 5;
 }
@@ -132,7 +131,6 @@ main {
   border-width: 150%;
   padding: 1rem 2rem;
   background-color: #434A62;
-  position: sticky;
   top: 0; 
   z-index: 6;
 }
@@ -177,12 +175,13 @@ main {
 }
 
 /* ---------- GALLERY GRID ---------- */
-.gallery {
-  column-count: 3;
-  gap: 4rem;
-  margin-top: 4rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+.gallery { 
+column-count: 3; 
+gap: 4rem; 
+margin-top: 4rem; 
+margin-left: 6rem; 
+margin-right: 6rem; 
+margin-bottom: 6rem; 
 }
 
 .artwork {
@@ -202,6 +201,17 @@ main {
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
+}
+
+.artwork video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.artwork video:hover img {
+  transform: scale(1.05);
 }
 
 .artwork:hover img {
